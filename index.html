@@ -15,12 +15,12 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1402106630879240');
+  fbq('init', '709579142124921');
   fbq('track', 'PageView');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1402106630879240&ev=PageView&noscript=1" />
+         src="https://www.facebook.com/tr?id=709579142124921&ev=PageView&noscript=1" />
   </noscript>
   <!-- End Meta Pixel Code -->
 
@@ -138,12 +138,12 @@
     const btnWhatsapp = document.getElementById('btnWhatsapp');
     const btnTelegram = document.getElementById('btnTelegram');
 
-    // Checar se já passou 4 dias desde o último clique
+    // Checar se já passou 2 dias desde o último clique
     const lastClickTime = localStorage.getItem('whatsappClickTime');
     const now = Date.now();
-    const fourDays = 4 * 24 * 60 * 60 * 1000; // 4 dias em ms
+    const twoDays = 2 * 24 * 60 * 60 * 1000; // 2 dias em ms
 
-    if (lastClickTime && (now - lastClickTime) < fourDays) {
+    if (lastClickTime && (now - lastClickTime) < twoDays) {
       disableWhatsappButton();
     }
 
